@@ -55,3 +55,4 @@ imap <Home> <C-o><Home>
 
 " colorscheme
 colorscheme railscasts
+syntax on
