@@ -1,0 +1,17 @@
+---
+patriciomacadden:
+- source: .bash_profile
+  target: ~/.bash_profile
+
+- source: .gemrc
+  target: ~/.gemrc
+
+- source: .vim/colors/github.vim
+  target: ~/.vim/colors/github.vim
+
+- source: .vim/colors/railscasts.vim
+  target: ~/.vim/colors/railscasts.vim
+
+- source: .vimrc
+  target: ~/.vimrc
+

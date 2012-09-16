@@ -1,5 +1,4 @@
-# Patricio Mac Adden's .files
+# .files
 
-## Installation
+Use... or don't!
 
-Clone the repository (or just download a tar.gz file) and run the installation script.
