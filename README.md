@@ -1,4 +1,4 @@
 # .files
 
-Use... or don't!
+My dotfiles!
 
