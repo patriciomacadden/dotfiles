@@ -1,0 +1,9 @@
+[user]
+	name = Patricio Mac Adden
+	email = patriciomacadden@gmail.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status

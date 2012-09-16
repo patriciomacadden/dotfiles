@@ -6,6 +6,9 @@ patriciomacadden:
 - source: .gemrc
   target: ~/.gemrc
 
+- source: .gitconfig
+  target: ~/.gitconfig
+
 - source: .vim/colors/github.vim
   target: ~/.vim/colors/github.vim
 
@@ -16,8 +19,7 @@ patriciomacadden:
   target: ~/.vimrc
 
 - source: TextMate/Themes/GitHub.tmTheme
-  target: ~/Library/Application\ Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/GitHub.tmTheme
+  target: '~/Library/Application Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/GitHub.tmTheme'
 
 - source: TextMate/Themes/railscasts.tmTheme
-  target: ~/Library/Application\ Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/railscasts.tmTheme
-
+  target: '~/Library/Application Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/railscasts.tmTheme'
