@@ -13,5 +13,10 @@ export SVN_EDITOR=vim
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
 # aliases
+
+## bundler
 alias be='bundle exec'
+
+## svn
+alias sti='svn st --ignore-externals'
 
