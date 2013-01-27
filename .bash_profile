@@ -1,17 +1,3 @@
-# bash stuff:
-export PS1="\w% "
-
-export CLICOLOR=1
-
-# rvm:
-[[ -s "/Users/patricio/.rvm/scripts/rvm" ]] && source "/Users/patricio/.rvm/scripts/rvm"
-
-# svn editor: vim
-export SVN_EDITOR=vim
-
-# mysql2 gem fix:
-export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
-
 # aliases
 
 ## bundler
@@ -19,4 +5,15 @@ alias be='bundle exec'
 
 ## svn
 alias sti='svn st --ignore-externals'
+
+export SVN_EDITOR=vim
+
+# bash
+export PS1="\w% "
+export CLICOLOR=1
+
+# rbenv
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
