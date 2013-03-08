@@ -1,19 +1,17 @@
-# aliases
-
-## bundler
-alias be='bundle exec'
-
-## svn
-alias sti='svn st --ignore-externals'
-
-export SVN_EDITOR=vim
+# bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
 
 # bash
-export PS1="\w% "
+export PS1="\w$(__git_ps1)% "
 export CLICOLOR=1
 
-# rbenv
+# bundler aliases
+alias be='bundle exec'
+alias bi='bundle install'
 
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
