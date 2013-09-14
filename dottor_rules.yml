@@ -9,6 +9,9 @@ patriciomacadden:
 - source: .gitconfig
   target: ~/.gitconfig
 
+- source: .irbrc
+  target: ~/.irbrc
+
 - source: .vim/colors/github.vim
   target: ~/.vim/colors/github.vim
 
