@@ -7,3 +7,7 @@
 	co = checkout
 	ci = commit
 	st = status
+[push]
+	default = simple
+[credential]
+	helper = cache

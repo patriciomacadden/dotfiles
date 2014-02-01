@@ -15,6 +15,7 @@ export CLICOLOR=1
 alias be='bundle exec'
 alias bi='bundle install'
 alias bs='bundle show'
+alias bu='bundle update'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
