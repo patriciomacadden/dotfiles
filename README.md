@@ -1,7 +1,11 @@
-# .files
+# dotfiles
 
 My dotfiles!
 
-## Sources
+## Installation
 
-* .vim/colors/github.vim from [nono/github_vim_theme](https://github.com/nono/github_vim_theme)
+Just run:
+
+```bash
+$ sh install.sh
+```
