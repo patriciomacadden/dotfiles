@@ -24,7 +24,9 @@ setopt promptsubst
 unsetopt beep
 
 bindkey ';5D' backward-word
+bindkey '[D' backward-word
 bindkey ';5C' forward-word
+bindkey '[C' forward-word
 
 zstyle ':completion:*' special-dirs true
 
