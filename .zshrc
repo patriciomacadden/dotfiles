@@ -40,7 +40,8 @@ precmd() {
 }
 
 export CLICOLOR=1
-export PROMPT='%{$fg_bold[white]%}%~%{$reset_color%}${vcs_info_msg_0_} %{$fg_bold[blue]%}☁ %{$reset_color%} '
+#export PROMPT='%{$fg_bold[white]%}%~%{$reset_color%}${vcs_info_msg_0_} %{$fg_bold[blue]%}☁ %{$reset_color%} '
+export PROMPT='%{$fg_bold[white]%}%~%{$reset_color%}${vcs_info_msg_0_} %{$fg_bold[blue]%}❯%{$reset_color%} '
 
 # aliases
 source ~/.common/aliases.sh
