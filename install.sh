@@ -23,6 +23,7 @@ ln -nfs $PWD/.vim ~/.vim
 ln -nfs $PWD/.vimrc ~/.vimrc
 
 # zsh
+ln -nfs $PWD/.zsh ~/.zsh
 ln -nfs $PWD/.zshrc ~/.zshrc
 
-echo "The dotfiles were successfully installed."
+echo "dotfiles were successfully installed."

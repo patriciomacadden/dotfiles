@@ -47,4 +47,5 @@ export PROMPT='%{$fg_bold[white]%}%~%{$reset_color%}${vcs_info_msg_0_} %{$fg_bol
 source ~/.common/aliases.sh
 source ~/.common/homebrew.sh
 source ~/.common/rbenv.sh
+source ~/.zsh/services.sh
 
