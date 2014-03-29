@@ -8,7 +8,8 @@ function parse_git_branch() {
 }
 
 # bash
-export PS1='\w$(parse_git_branch) ☁  '
+#export PS1='\w$(parse_git_branch) ☁  '
+export PS1='\w$(parse_git_branch) ❯ '
 export CLICOLOR=1
 
 # aliases
