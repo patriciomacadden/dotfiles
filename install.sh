@@ -3,10 +3,8 @@
 PDW=`pwd`
 
 # bash
+ln -nfs $PWD/.bash ~/.bash
 ln -nfs $PWD/.bash_profile ~/.bash_profile
-
-# common bash and zsh files
-ln -nfs $PWD/.common ~/.common
 
 # rubygems
 ln -nfs $PWD/.gemrc ~/.gemrc
@@ -21,9 +19,5 @@ ln -nfs $PWD/.irbrc ~/.irbrc
 # vim
 ln -nfs $PWD/.vim ~/.vim
 ln -nfs $PWD/.vimrc ~/.vimrc
-
-# zsh
-ln -nfs $PWD/.zsh ~/.zsh
-ln -nfs $PWD/.zshrc ~/.zshrc
 
 echo "dotfiles were successfully installed."

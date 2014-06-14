@@ -47,5 +47,8 @@ export PROMPT='%{$fg_bold[white]%}%~%{$reset_color%}${vcs_info_msg_0_} %{$fg_bol
 source ~/.common/aliases.sh
 source ~/.common/homebrew.sh
 source ~/.common/rbenv.sh
-source ~/.zsh/services.sh
+source ~/.common/android.sh
 
+
+# added by travis gem
+[ -f /Users/patricio/.travis/travis.sh ] && source /Users/patricio/.travis/travis.sh
