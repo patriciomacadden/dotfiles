@@ -7,6 +7,23 @@ My dotfiles!
 Just run:
 
 ```bash
-$ sh install.sh
+$ make
 ```
 
+If you want to install specific files:
+
+```bash
+$ make .bash_profile
+```
+
+## Uninstall (clean)
+
+```bash
+$ make clean
+```
+
+Clean dead links:
+
+```bash
+$ make clean-dead
+```
