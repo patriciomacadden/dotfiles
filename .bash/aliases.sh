@@ -10,6 +10,9 @@ alias bu='bundle update'
 # directory
 alias md='mkdir -p'
 
+# grep
+alias grep='grep --color=auto'
+
 # mac os x
 alias dsclean='find . -type f -name .DS_Store -print0 | xargs -0 rm'
 
