@@ -13,3 +13,6 @@ violet=$(tput setaf 61)
 white=$(tput setaf 15)
 yellow=$(tput setaf 136)
 
+# TEMPL
+templ=$(tput setaf 170)
+
