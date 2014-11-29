@@ -54,5 +54,5 @@ imap <Home> <C-o><Home>
 "imap <End>  <C-o><End>
 
 " colorscheme
-colorscheme railscasts
+colorscheme github
 syntax on
