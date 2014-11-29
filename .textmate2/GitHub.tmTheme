@@ -24,7 +24,10 @@
         <key>lineHighlight</key>
         <string>#00000012</string>
         <key>selection</key>
+        <!--
         <string>#BAD6FD</string>
+        -->
+        <string>#C8C8FA</string>
       </dict>
     </dict>
     <dict>
@@ -231,15 +234,13 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>String interpolation</string>
+      <string>Embedded source</string>
       <key>scope</key>
-      <string>constant.other.placeholder.py</string>
+      <string>text source, meta.embedded</string>
       <key>settings</key>
       <dict>
-        <key>fontStyle</key>
-        <string></string>
         <key>foreground</key>
-        <string>#990000</string>
+        <string>#333</string>
       </dict>
     </dict>
   </array>
