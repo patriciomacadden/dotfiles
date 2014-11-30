@@ -24,9 +24,6 @@
         <key>lineHighlight</key>
         <string>#00000012</string>
         <key>selection</key>
-        <!--
-        <string>#BAD6FD</string>
-        -->
         <string>#C8C8FA</string>
       </dict>
     </dict>
@@ -241,6 +238,28 @@
       <dict>
         <key>foreground</key>
         <string>#333</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>CSS property value</string>
+      <key>scope</key>
+      <string>support.constant.property-value.css</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#0086b3</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>JS dom</string>
+      <key>scope</key>
+      <string>support.constant.dom.js, support.function.dom.js, meta.function.js</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#0086b3</string>
       </dict>
     </dict>
   </array>
