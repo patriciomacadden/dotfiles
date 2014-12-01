@@ -1,117 +1,40 @@
-" Vim color file -- with 256 colour support!
-"
-" Author: Anthony Carapetis <anthony.carapetis@gmail.com>
-" Contributors: Lucas Tadeu <lucastadeuteixeira@gmail.com>
-"
-" Note: Based on github's syntax highlighting theme
-"       Used Brian Mock's darkspectrum as a starting point/template
-"       Thanks to Ryan Heath for an easy list of some of the colours:
-"       http://rpheath.com/posts/356-github-theme-for-syntax-gem
-
 set background=light
-
-if version > 580
-  hi clear
-  if exists("syntax_on")
-    syntax reset
-  endif
+hi clear
+if exists("syntax_on")
+  syntax reset
 endif
 
-let colors_name = "github"
+let g:colors_name = "github"
+set t_Co=256
 
-" {{{ General colors
-hi Normal   ctermfg=0   ctermbg=255  guifg=#000000   guibg=#F8F8FF
-hi NonText  ctermfg=0   ctermbg=255  guifg=#000000   guibg=#F8F8FF
-hi Cursor   ctermfg=239   ctermbg=15  guifg=#F8F8FF   guibg=#444454
-hi Visual   ctermfg=15   ctermbg=61  guifg=#FFFFFF   guibg=#3465a3
-hi VisualNOS   ctermfg=15   ctermbg=24  guifg=#FFFFFF   guibg=#204a87
-hi Search   ctermfg=236   ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=bold gui=bold
-hi Folded   ctermfg=8 ctermbg=15 guifg=#808080 guibg=#ECECEC gui=bold cterm=bold
-hi Title    ctermfg=167 guifg=#ef5939
-hi StatusLine ctermfg=238 ctermbg=250 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
-hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=italic cterm=italic
-hi VertSplit ctermfg=250 ctermbg=250 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
-hi LineNr   ctermfg=246 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
-hi SpecialKey ctermfg=6 guifg=#177F80 gui=italic cterm=italic
-hi WarningMsg ctermfg=167 guifg=#ef5939
-hi ErrorMsg ctermbg=15 ctermfg=196 guibg=#f8f8ff guifg=#ff1100 gui=undercurl cterm=undercurl
-hi ColorColumn ctermbg=254 guibg=#e4e4e4
-" }}}
+hi Normal ctermfg=236 guifg=#333333
+hi Visual ctermbg=152 guifg=#b2cce6
 
-" {{{ Vim => 7.0 specific colors
-if version >= 700
-  hi CursorLine ctermbg=253 guibg=#D8D8DD
-  hi MatchParen ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd
-  hi Pmenu        ctermfg=15 ctermbg=8 guifg=#ffffff guibg=#808080 gui=bold   cterm=bold
-  hi PmenuSel     ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd  gui=italic cterm=italic
-  hi PmenuSbar    ctermfg=238 ctermbg=0 guifg=#444444 guibg=#000000
-  hi PmenuThumb   ctermfg=248 ctermbg=248 guifg=#aaaaaa guibg=#aaaaaa
-endif
-" }}}
+hi Comment ctermfg=102 guifg=#969896
+hi Constant ctermfg=31 guifg=#0086b3
+hi Function ctermfg=97 guifg=#795da3
+hi Identifier ctermfg=236 guifg=#333333
+hi Number ctermfg=31 guifg=#0086b3
+hi PreProc ctermfg=125 guifg=#a71d5d
+hi Statement ctermfg=125 guifg=#a71d5d
+hi String ctermfg=160 guifg=#df5000
+hi Todo ctermbg=231 ctermfg=102 guibg=#ffffff guifg=#969896
+hi Type ctermfg=97 guifg=#795da3
 
-" {{{ Diff highlighting
-hi DiffAdd    ctermfg=233 ctermbg=194 guifg=#003300 guibg=#DDFFDD gui=none cterm=none
-hi DiffChange ctermbg=255  guibg=#ececec gui=none   cterm=none
-hi DiffText   ctermfg=233  ctermbg=189  guifg=#000033 guibg=#DDDDFF gui=none cterm=none
-hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    cterm=none
-" }}}
+hi xmlTag ctermfg=236 guifg=#333333
+hi xmlTagName ctermfg=71 guifg=#63a35c
 
-" {{{ Syntax highlighting
-hi Ignore   ctermfg=8 guifg=#808080
-hi Identifier   ctermfg=31 guifg=#0086B3
-hi PreProc  ctermfg=247 guifg=#A0A0A0 gui=bold cterm=bold
-hi Comment  ctermfg=246 guifg=#999988
-hi Constant ctermfg=6 guifg=#177F80 gui=none cterm=none
-hi String   ctermfg=161 guifg=#D81745
-hi Function ctermfg=88 guifg=#990000 gui=bold cterm=bold
-hi Statement    ctermfg=0 guifg=#000000 gui=bold cterm=bold
-hi Type     ctermfg=60 guifg=#445588 gui=bold   cterm=bold
-hi Number   ctermfg=30 guifg=#1C9898
-hi Todo     ctermfg=15 ctermbg=88 guifg=#FFFFFF guibg=#990000 gui=bold cterm=bold
-hi Special  ctermfg=28 guifg=#159828 gui=bold   cterm=bold
-hi Todo         ctermbg=15 ctermfg=196 guibg=#f8f8ff guifg=#ff1100 gui=underline cterm=underline
-hi Label        ctermfg=0 guifg=#000000 gui=bold    cterm=bold
-hi StorageClass ctermfg=0 guifg=#000000 gui=bold    cterm=bold
-hi Structure    ctermfg=0 guifg=#000000 gui=bold    cterm=bold
-hi TypeDef      ctermfg=0 guifg=#000000 gui=bold    cterm=bold
+hi link htmlTag xmlTag
+hi link htmlTagName xmlTagName
 
-" {{{ Links
-hi! link FoldColumn Folded
-hi! link CursorColumn   CursorLine
-"hi! link NonText    LineNr
-" }}}
+hi htmlArg ctermfg=97 guifg=#795da3
+hi htmlComment ctermfg=236 guifg=#333333
+hi htmlSpecialTagName ctermfg=71 guifg=#63a35c
 
-" {{{ Aliases
-hi link cppSTL          Function
-hi link cppSTLType      Type
-hi link Character       Number
-hi link htmlTag         htmlEndTag
-hi link htmlLink        Underlined
-hi link pythonFunction  Identifier
-hi link Question        Type
-hi link CursorIM        Cursor
-hi link VisualNOS       Visual
-hi link xmlTag          Identifier
-hi link xmlTagName      Identifier
-hi link shDeref         Identifier
-hi link shVariable      Function
-hi link rubySharpBang   Special
-hi link perlSharpBang   Special
-hi link schemeFunc      Statement
-" }}}
+hi cssBraces ctermfg=236 guifg=#333333
+hi cssTagName ctermfg=71 guifg=#63a35c
 
-" {{{ Tabs
-hi TabLine ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
-hi TabLineFill ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
-hi TabLineSel   ctermfg=238 guifg=#404040 gui=bold
-" }}}
-
-" {{{ Spelling
-if has("spell")
-    hi spellBad     guisp=#fcaf3e
-    hi spellCap     guisp=#73d216
-    hi spellRare    guisp=#fcaf3e
-    hi spellLocal   guisp=#729fcf
-endif
-" }}}
-
+hi javaScriptBraces ctermfg=236 guifg=#333333
+hi javaScriptIdentifier ctermfg=125 guifg=#a71d5d
+hi javaScriptMember ctermfg=31 guifg=#0086b3
+hi javaScriptNumber ctermfg=31 guifg=#0086b3
