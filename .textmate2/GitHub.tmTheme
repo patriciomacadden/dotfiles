@@ -46,7 +46,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#df5000</string>
+        <string>#183691</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +79,29 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
+        <string>#183691</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>User-defined constant</string>
+      <key>scope</key>
+      <string>variable.other.constant.ruby</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
         <string>#0086b3</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>self</string>
+      <key>scope</key>
+      <string>variable.language.ruby</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ed6a43</string>
       </dict>
     </dict>
     <dict>
