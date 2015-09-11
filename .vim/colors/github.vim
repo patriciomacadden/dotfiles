@@ -16,8 +16,9 @@ hi Function ctermfg=97 guifg=#795da3
 hi Identifier ctermfg=236 guifg=#333333
 hi Number ctermfg=31 guifg=#0086b3
 hi PreProc ctermfg=125 guifg=#a71d5d
+hi Special ctermfg=24 guifg=#183691
 hi Statement ctermfg=125 guifg=#a71d5d
-hi String ctermfg=160 guifg=#df5000
+hi String ctermfg=24 guifg=#183691
 hi Todo ctermbg=231 ctermfg=102 guibg=#ffffff guifg=#969896
 hi Type ctermfg=97 guifg=#795da3
 
