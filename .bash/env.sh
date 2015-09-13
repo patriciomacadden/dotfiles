@@ -10,3 +10,7 @@ export TERM='xterm-256color'
 
 export CLICOLOR=1
 
+export GREP_OPTIONS='--color=auto'
+
+shopt -s cdspell
+shopt -s histappend

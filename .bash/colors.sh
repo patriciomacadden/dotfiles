@@ -1,5 +1,5 @@
 bold=$(tput bold)
-reset_colours=$(tput sgr0)
+reset_colors=$(tput sgr0)
 
 # Solarized colors, taken from http://git.io/solarized-colors.
 black=$(tput setaf 0)

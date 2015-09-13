@@ -4,7 +4,6 @@ autocmd! bufwritepost .vimrc source %
 " indentation configuration
 set tabstop=2
 set shiftwidth=2
-set backspace=2
 set expandtab
 set autoindent
 set smartindent
@@ -54,6 +53,11 @@ imap <Home> <C-o><Home>
 "vnoremap <expr> <End>  (col('.') == match(getline('.'),    '\s*$')   ? '$h' : 'g_')
 "imap <End>  <C-o><End>
 
+" fix backspace error
+set backspace=2
+
 " colorscheme
-colorscheme github
+set background=dark
+colorscheme solarized
 syntax on
+
