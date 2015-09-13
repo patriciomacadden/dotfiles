@@ -1,9 +1,4 @@
-source ~/.bash/path.sh
-source ~/.bash/env.sh
-source ~/.bash/bindings.sh
-source ~/.bash/completion.sh
-source ~/.bash/aliases.sh
-source ~/.bash/functions.sh
-source ~/.bash/colors.sh
-source ~/.bash/prompt.sh
+for file in path env bindings completion aliases functions colors prompt; do
+  source ~/.bash/$file.sh
+done
 
