@@ -1,4 +1,4 @@
-for file in path env bindings completion aliases functions colors prompt; do
-  source ~/.bash/$file.sh
+for file in `ls .bash`; do
+  source ~/.bash/$file
 done
 
