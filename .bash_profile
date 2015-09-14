@@ -1,4 +1,4 @@
-for file in `ls .bash`; do
+for file in `ls ~/.bash`; do
   source ~/.bash/$file
 done
 
