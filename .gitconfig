@@ -3,25 +3,33 @@
 	ci = commit
 	l = log --oneline
 	st = status
+	purge = "!git branch --merged | grep -v \"\\*\" | grep -v master | xargs -n 1 git branch -D"
+
 [color]
 	ui = true
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold # line info
 	old = red # deletions
 	new = green # additions
+
 [color "status"]
 	added = yellow
 	changed = green
 	untracked = cyan
+
 [credential]
 	helper = cache
+
 [push]
 	default = simple
+
 [user]
 	name = Patricio Mac Adden
 	email = patriciomacadden@gmail.com

@@ -6,11 +6,14 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 
-export TERM='xterm-256color'
+export TERM="xterm-256color"
 
 export CLICOLOR=1
 
-export GREP_OPTIONS='--color=auto'
+export GREP_OPTIONS="--color=auto"
+
+export EDITOR=vim
 
 shopt -s cdspell
 shopt -s histappend
+
