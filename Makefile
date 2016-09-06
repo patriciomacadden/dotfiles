@@ -1,7 +1,7 @@
 CURDIR?=$(.CURDIR)
 LN_FLAGS=-nfs
 RM_FLAGS=-rf
-SYMLINKS=.bash .bash_profile .gemrc .gitconfig .irbrc .vim .vimrc bin
+SYMLINKS=.bash .bash_profile .gemrc .gitconfig .irbrc .config/nvim bin
 
 .PHONY: $(SYMLINKS)
 

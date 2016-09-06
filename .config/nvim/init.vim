@@ -1,28 +1,26 @@
-" 1 important
-set nocompatible
+call plug#begin()
+
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'flazz/vim-colorschemes'
+
+call plug#end()
 
 " 2 moving around, searching and patterns
-set incsearch
+set whichwrap=<,>,[,]
 
 " 4 displaying text
 set nowrap
 set list
-set listchars=tab:>-,trail:-
 set number
 
 " 5 syntax, highlighting and spelling
-set background=dark
-syntax on
-
-colorscheme hybrid
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
-
-" 9 using the mouse
-set mouse=a
+colorscheme hybrid_material
+let g:hybrid_custom_term_colors=1
+let g:hybrid_reduced_contrast=1
 
 " 11 messages and info
 set showmode
+set ruler
 
 " 13 editing text
 set showmatch

@@ -24,3 +24,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # postgresql
 alias pgfix="rm /usr/local/var/postgres/postmaster.pid"
 
+# neovim
+alias vim="nvim -p"
+alias vi="nvim -p"
+
