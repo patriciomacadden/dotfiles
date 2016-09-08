@@ -12,7 +12,7 @@ export CLICOLOR=1
 
 export GREP_OPTIONS="--color=auto"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 shopt -s cdspell
 shopt -s histappend

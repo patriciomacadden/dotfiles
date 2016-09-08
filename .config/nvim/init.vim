@@ -1,9 +1,20 @@
 call plug#begin()
 
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'flazz/vim-colorschemes'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-ruby/vim-ruby'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-speeddating'
+Plug 'danro/rename.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'raimondi/delimitmate'
 
 call plug#end()
+
+" reload nvim when saving this file
+autocmd! bufwritepost init.vim source %
 
 " 2 moving around, searching and patterns
 set whichwrap=<,>,[,]
@@ -14,13 +25,11 @@ set list
 set number
 
 " 5 syntax, highlighting and spelling
+set background=dark
 colorscheme hybrid_material
-let g:hybrid_custom_term_colors=1
-let g:hybrid_reduced_contrast=1
 
 " 11 messages and info
-set showmode
-set ruler
+set noshowmode
 
 " 13 editing text
 set showmatch
@@ -33,4 +42,16 @@ set softtabstop=2
 set expandtab
 set autoindent
 set smartindent
+
+" fzf.vim
+map <c-p> :Files<enter>
+
+" lightline
+let g:lightline = {
+  \ 'colorscheme': 'jellybeans'
+  \ }
+
+" nerdcommenter
+let g:NERDSpaceDelims=1
+let g:NERDDefaultAlign='left'
 
