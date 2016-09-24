@@ -1,6 +1,5 @@
 call plug#begin()
 
-Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-ruby/vim-ruby'
 Plug 'junegunn/fzf'
@@ -10,6 +9,12 @@ Plug 'tpope/vim-speeddating'
 Plug 'danro/rename.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'raimondi/delimitmate'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'ap/vim-css-color'
+Plug 'chriskempson/base16-vim'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-abolish'
+Plug 'dkprice/vim-easygrep'
 
 call plug#end()
 
@@ -26,7 +31,7 @@ set number
 
 " 5 syntax, highlighting and spelling
 set background=dark
-colorscheme hybrid_material
+colorscheme base16-tomorrow-night
 
 " 11 messages and info
 set noshowmode
@@ -48,7 +53,7 @@ map <c-p> :Files<enter>
 
 " lightline
 let g:lightline = {
-  \ 'colorscheme': 'jellybeans'
+  \ 'colorscheme': 'Tomorrow_Night_Bright'
   \ }
 
 " nerdcommenter
