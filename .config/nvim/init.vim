@@ -1,20 +1,23 @@
 call plug#begin()
 
-Plug 'scrooloose/nerdcommenter'
-Plug 'vim-ruby/vim-ruby'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'mhinz/vim-startify'
-Plug 'tpope/vim-speeddating'
-Plug 'danro/rename.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'raimondi/delimitmate'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'ap/vim-css-color'
 Plug 'chriskempson/base16-vim'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-abolish'
 Plug 'dkprice/vim-easygrep'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'mhinz/vim-startify'
+Plug 'raimondi/delimitmate'
+Plug 'scrooloose/syntastic'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-speeddating'
+Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
@@ -55,8 +58,4 @@ map <c-p> :Files<enter>
 let g:lightline = {
   \ 'colorscheme': 'Tomorrow_Night_Bright'
   \ }
-
-" nerdcommenter
-let g:NERDSpaceDelims=1
-let g:NERDDefaultAlign='left'
 
