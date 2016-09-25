@@ -2,7 +2,7 @@
 alias reload="exec $SHELL -l"
 
 # bash
-alias ls="ls --color=auto"
+#alias ls="ls --color=auto"
 
 # bundler aliases
 alias be="bundle exec"

@@ -7,23 +7,12 @@ My dotfiles!
 Just run:
 
 ```bash
-$ make
+$ rake
 ```
 
-If you want to install specific files:
+## Uninstallation
 
 ```bash
-$ make .bash_profile
+$ rake uninstall
 ```
 
-## Uninstall (clean)
-
-```bash
-$ make clean
-```
-
-Clean dead links:
-
-```bash
-$ make clean-dead
-```
