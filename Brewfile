@@ -1,7 +1,9 @@
 tap "caskroom/cask"
 tap "caskroom/versions"
 tap "homebrew/bundle"
+tap "homebrew/services"
 tap "homebrew/versions"
+tap "neovim/neovim"
 
 brew "bash"
 brew "bash-completion"
@@ -9,7 +11,7 @@ brew "chruby"
 brew "fzf"
 brew "git"
 brew "ncdu"
-brew "neovim/neovim/neovim"
+brew "neovim"
 brew "postgresql"
 brew "ruby-install"
 
