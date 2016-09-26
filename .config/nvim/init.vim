@@ -16,6 +16,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-speeddating'
 Plug 'vim-ruby/vim-ruby'
 
