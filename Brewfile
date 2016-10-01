@@ -14,6 +14,7 @@ brew "ncdu"
 brew "neovim"
 brew "postgresql"
 brew "ruby-install"
+brew "stow"
 
 cask "android-studio"
 cask "dropbox"
