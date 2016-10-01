@@ -14,7 +14,6 @@ Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-speeddating'
@@ -54,6 +53,9 @@ set smartindent
 
 " fzf.vim
 map <c-p> :Files<enter>
+
+map <leader><left> :tabp<enter>
+map <leader><right> :tabn<enter>
 
 " lightline
 let g:lightline = {

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-ruby -run -e httpd -- -p 4444 ${1:-'.'}
-
