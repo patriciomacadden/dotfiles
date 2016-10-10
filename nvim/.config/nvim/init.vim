@@ -1,5 +1,6 @@
 call plug#begin()
 
+Plug 'airblade/vim-helptab'
 Plug 'ap/vim-css-color'
 Plug 'chriskempson/base16-vim'
 Plug 'dkprice/vim-easygrep'
@@ -17,12 +18,13 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
 " reload nvim when saving this file
-autocmd! bufwritepost init.vim source %
+autocmd! bufwritepost init.vim nested source %
 
 " 2 moving around, searching and patterns
 set whichwrap=<,>,[,]
@@ -35,6 +37,10 @@ set number
 " 5 syntax, highlighting and spelling
 set background=dark
 colorscheme base16-tomorrow-night
+
+" 6 multiple windows
+set splitbelow
+set splitright
 
 " 11 messages and info
 set noshowmode
@@ -61,4 +67,7 @@ map <leader><right> :tabn<enter>
 let g:lightline = {
   \ 'colorscheme': 'Tomorrow_Night_Bright'
   \ }
+
+" syntastic
+let g:syntastic_check_on_open=1
 

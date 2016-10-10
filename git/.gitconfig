@@ -27,6 +27,9 @@
 [credential]
 	helper = cache
 
+[diff]
+	tool = vimdiff
+
 [push]
 	default = simple
 
