@@ -13,6 +13,7 @@ brew "git"
 brew "ncdu"
 brew "neovim"
 brew "postgresql"
+brew "readline"
 brew "ruby-install"
 brew "stow"
 
