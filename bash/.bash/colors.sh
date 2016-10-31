@@ -1,6 +1,13 @@
-bold=$(tput bold)
-reset_colors=$(tput sgr0)
+bold=`tput bold`
+reset=`tput sgr0`
 
-# TEMPL
-templ=$(tput setaf 170)
+# Tomorrow Dark colors
+black=`tput setaf 0`
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+blue=`tput setaf 4`
+magenta=`tput setaf 5`
+cyan=`tput setaf 6`
+white=`tput setaf 7`
 
