@@ -1,11 +1,11 @@
-# dotfiles
-alias reload="exec $SHELL -l"
-
 # bundler aliases
 alias be="bundle exec"
 alias bi="bundle install"
 alias bs="bundle show"
 alias bu="bundle update"
+
+# dotfiles
+alias reload="exec $SHELL -l"
 
 # http server
 alias serve="ruby -run -e httpd -- -p 4444 $1"

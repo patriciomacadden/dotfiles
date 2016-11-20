@@ -61,8 +61,13 @@ set smartindent
 " fzf.vim
 map <c-p> :Files<enter>
 
+" tabs
 map <leader><left> :tabp<enter>
 map <leader><right> :tabn<enter>
+
+" mistakes: I often type :Wq or :Q or something
+cmap Q q
+cmap W w
 
 " lightline
 let g:lightline = {
