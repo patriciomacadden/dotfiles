@@ -14,7 +14,7 @@ export GREP_OPTIONS="--color=auto"
 
 export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
-export HISTFILESIZE=2000
+export HISTFILESIZE=10000
 
 export TERM="xterm-256color"
 

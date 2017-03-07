@@ -2,4 +2,7 @@
 nvim/.config/nvim/.netrwhist
 nvim/.config/nvim/autoload
 nvim/.config/nvim/plugged
+vim/.vim/.netrwhist
+vim/.vim/autoload
+vim/.vim/plugged
 

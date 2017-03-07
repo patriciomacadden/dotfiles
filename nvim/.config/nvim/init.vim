@@ -5,19 +5,20 @@ Plug 'ap/vim-css-color'
 Plug 'chriskempson/base16-vim'
 Plug 'dkprice/vim-easygrep'
 Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-slash'
 Plug 'mhinz/vim-startify'
-Plug 'raimondi/delimitmate'
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
@@ -37,6 +38,9 @@ set number
 
 " 5 syntax, highlighting and spelling
 set background=dark
+if has("termguicolors")
+  set termguicolors
+endif
 colorscheme base16-tomorrow-night
 
 " 6 multiple windows
@@ -64,10 +68,6 @@ map <c-p> :Files<enter>
 " tabs
 map <leader><left> :tabp<enter>
 map <leader><right> :tabn<enter>
-
-" mistakes: I often type :Wq or :Q or something
-cmap Q q
-cmap W w
 
 " lightline
 let g:lightline = {
