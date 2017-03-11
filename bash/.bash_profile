@@ -1,4 +1,2 @@
-for file in `ls ~/.bash`; do
-  source ~/.bash/$file
-done
+source $HOME/.bashrc
 
