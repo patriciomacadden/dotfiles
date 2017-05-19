@@ -51,6 +51,9 @@ colorscheme base16-tomorrow-night
 set splitbelow
 set splitright
 
+" 9 using the mouse
+set mouse=a
+
 " 11 messages and info
 set noshowmode
 
