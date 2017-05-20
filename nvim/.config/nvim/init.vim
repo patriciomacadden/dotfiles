@@ -45,7 +45,7 @@ set background=dark
 if has("termguicolors")
   set termguicolors
 endif
-colorscheme base16-tomorrow-night
+colorscheme base16-onedark
 
 " 6 multiple windows
 set splitbelow
@@ -56,6 +56,9 @@ set mouse=a
 
 " 11 messages and info
 set noshowmode
+
+" 12 selecting text
+set clipboard=unnamed
 
 " 13 editing text
 set showmatch

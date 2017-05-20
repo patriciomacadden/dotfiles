@@ -2,6 +2,9 @@
 nvim/.config/nvim/.netrwhist
 nvim/.config/nvim/autoload
 nvim/.config/nvim/plugged
+ssh/.ssh/id_rsa
+ssh/.ssh/id_rsa.pub
+ssh/.ssh/known_hosts
 vim/.vim/.netrwhist
 vim/.vim/autoload
 vim/.vim/plugged
