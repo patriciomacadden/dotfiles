@@ -34,4 +34,3 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to c
 
 # sudo: allow aliases to work with sudo
 alias sudo="sudo "
-

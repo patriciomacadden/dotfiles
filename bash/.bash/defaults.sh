@@ -13,11 +13,10 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GREP_OPTIONS="--color=auto"
 
 export HISTCONTROL=ignoreboth
-export HISTSIZE=1000
-export HISTFILESIZE=10000
+export HISTSIZE=100000
+export HISTFILESIZE=100000
 
 export TERM="xterm-256color"
 
 shopt -s cdspell
 shopt -s histappend
-
