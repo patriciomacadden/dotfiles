@@ -12,3 +12,4 @@ cyan=`tput setaf 6`
 white=`tput setaf 7`
 
 export PS1='\[$white\]\w$(__git_ps1 " on %s") \[$blue\]❯\[$reset\] '
+export PROMPT_COMMAND="history -a"

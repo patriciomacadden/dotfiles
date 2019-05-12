@@ -1,4 +1,6 @@
 .DS_Store
+bash/.bash/env.sh
+nvim/.config/configstore/
 nvim/.config/nvim/.netrwhist
 nvim/.config/nvim/autoload
 nvim/.config/nvim/plugged

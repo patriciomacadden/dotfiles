@@ -26,6 +26,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias vim="nvim -p"
 alias vi="nvim -p"
 
+# node
+alias nodefix="rm -rf node_modules && npm install"
+
 # postgresql
 alias pgfix="rm /usr/local/var/postgres/postmaster.pid"
 

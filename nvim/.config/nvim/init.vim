@@ -45,8 +45,7 @@ set background=dark
 if has("termguicolors")
   set termguicolors
 endif
-" colorscheme base16-material-darker
-colorscheme onehalfdark
+colorscheme base16-material-darker
 
 " 6 multiple windows
 set splitbelow
