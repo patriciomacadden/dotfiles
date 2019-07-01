@@ -13,4 +13,3 @@ task :uninstall do
 end
 
 task default: :install
-

@@ -10,14 +10,14 @@ but with a nice `Rakefile`.
 * [homebrew](http://brew.sh)
 * [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
 * [vim-plug](https://github.com/junegunn/vim-plug)
-* [base16-iterm2](https://github.com/chriskempson/base16-iterm2) (install after running `brew bundle` - see below)
+* [base16-iterm2](https://github.com/chriskempson/base16-iterm2)
 
 ### Installing
 
-Install dependencies:
+Install stow:
 
 ```bash
-$ brew bundle
+$ brew install stow
 ```
 
 Install the actual dotfiles:
@@ -37,4 +37,3 @@ $ rake uninstall
 ## License
 
 What?
-

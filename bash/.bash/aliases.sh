@@ -1,9 +1,3 @@
-# bundler aliases
-alias be="bundle exec"
-alias bi="bundle install"
-alias bs="bundle show"
-alias bu="bundle update"
-
 # dotfiles
 alias reload="exec $SHELL -l"
 
@@ -25,12 +19,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # neovim
 alias vim="nvim -p"
 alias vi="nvim -p"
-
-# node
-alias nodefix="rm -rf node_modules && npm install"
-
-# postgresql
-alias pgfix="rm /usr/local/var/postgres/postmaster.pid"
 
 # ssh
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to clipboard.\n'"
