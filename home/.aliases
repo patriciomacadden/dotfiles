@@ -1,8 +1,4 @@
-# dotfiles
 alias reload="exec $SHELL -l"
-
-# http server
-alias serve="ruby -run -e httpd -- -p 4444 $1"
 
 # IP Addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
