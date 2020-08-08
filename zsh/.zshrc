@@ -1,9 +1,15 @@
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 autoload -Uz add-zsh-hook
 autoload -Uz compinit && compinit
 autoload -Uz vcs_info
 
 export HISTSIZE=10000
 export SAVEHIST=10000
+
+export LC_ALL=en_US.UTF-8
 
 export PATH=$HOME/.bin:$PATH
 
@@ -29,6 +35,7 @@ zstyle ":vcs_info:git*" formats " on %b"
 
 add-zsh-hook precmd vcs_info
 
-PS1="%~\$vcs_info_msg_0_ %F{blue}❯%F{reset} "
+# PS1="%~\$vcs_info_msg_0_ %F{50}❯%F{reset} "
+PS1="%~\$vcs_info_msg_0_ %F{50}λ%F{reset} "
 
 [ -f ~/.aliases ] && source ~/.aliases
