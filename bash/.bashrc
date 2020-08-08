@@ -1,4 +1,5 @@
-[ -f `brew --prefix`/etc/bash_completion ] && source `brew --prefix`/etc/bash_completion
+[ `uname -s` = "Darwin" ] && [ -f `brew --prefix`/etc/bash_completion ] && source `brew --prefix`/etc/bash_completion
+[ `uname -s` = "Linux" ] && [ -f /usr/share/git/completion/git-prompt.sh ] && source /usr/share/git/completion/git-prompt.sh
 
 export CLICOLOR=1
 
@@ -16,7 +17,8 @@ export HISTFILESIZE=100000
 
 export PATH=$HOME/.bin:$PATH
 
-export PS1='\[$(tput setaf 7)\]\w$(__git_ps1 " on %s") \[$(tput setaf 4)\]❯\[$(tput sgr0)\] '
+# export PS1='\[$(tput setaf 7)\]\w$(__git_ps1 " on %s") \[$(tput setaf 4)\]❯\[$(tput sgr0)\] '
+export PS1='\[$(tput setaf 7)\]\w$(__git_ps1 " on %s") \[$(tput setaf 4)\]λ\[$(tput sgr0)\] '
 export PROMPT_COMMAND="history -a"
 
 export TERM="xterm-256color"
