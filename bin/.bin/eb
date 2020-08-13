@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it -v $HOME/.aws:/root/.aws -v $HOME/.ssh:/root/.ssh -v $PWD:/data --rm eb "$@"

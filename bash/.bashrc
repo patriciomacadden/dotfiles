@@ -15,7 +15,7 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 
-export PATH=$HOME/.bin:$PATH
+export PATH=$HOME/.bin.local:$HOME/.bin:$PATH
 
 # export PS1='\[$(tput setaf 7)\]\w$(__git_ps1 " on %s") \[$(tput setaf 4)\]❯\[$(tput sgr0)\] '
 export PS1='\[$(tput setaf 7)\]\w$(__git_ps1 " on %s") \[$(tput setaf 4)\]λ\[$(tput sgr0)\] '

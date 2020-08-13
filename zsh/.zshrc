@@ -12,7 +12,7 @@ export SAVEHIST=10000
 
 export LC_ALL=en_US.UTF-8
 
-export PATH=$HOME/.bin:$PATH
+export PATH=$HOME/.bin.local:$HOME/.bin:$PATH
 
 setopt hist_ignore_all_dups
 setopt inc_append_history
