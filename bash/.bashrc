@@ -9,7 +9,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 
-export GREP_OPTIONS="--color=auto"
+#export GREP_OPTIONS="--color=auto"
 
 export HISTCONTROL=ignoreboth
 export HISTSIZE=100000

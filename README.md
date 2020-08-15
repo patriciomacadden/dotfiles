@@ -1,37 +1,27 @@
 # dotfiles
 
-These are my dotfiles. They're managed using [GNU Stow](https://www.gnu.org/software/stow/),
-but with a nice `Rakefile`.
+These are my dotfiles. They're managed using [GNU Stow](https://www.gnu.org/software/stow/).
 
 ## Installation
 
 ### Requirements
 
-* [homebrew](http://brew.sh)
-* [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
+* [homebrew](http://brew.sh) (macOS)
+* [base16-iterm2](https://github.com/chriskempson/base16-iterm2) (macOS)
 * [vim-plug](https://github.com/junegunn/vim-plug)
-* [base16-iterm2](https://github.com/chriskempson/base16-iterm2)
+* [stow](https://www.gnu.org/software/stow/)
 
 ### Installing
 
-Install stow:
-
 ```bash
-$ brew install stow
+$ make
 ```
 
-Install the actual dotfiles:
+## Uninstallating
+
 
 ```bash
-$ rake
-```
-
-## Uninstallation
-
-Just run:
-
-```bash
-$ rake uninstall
+$ make uninstall
 ```
 
 ## License
