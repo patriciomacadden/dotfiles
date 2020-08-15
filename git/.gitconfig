@@ -30,6 +30,9 @@
 [diff]
 	tool = vimdiff
 
+[pull]
+	ff = only
+
 [push]
 	default = simple
 
