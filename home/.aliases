@@ -4,9 +4,18 @@ alias reload="exec $SHELL -l"
 alias dc="docker-compose"
 alias dsp="docker system prune -f"
 
+# grep
+alias grep="grep --color"
+
 # IP Addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
+
+# linux
+if [ `uname -s` = "Linux" ]
+then
+  alias ls="ls --color"
+fi
 
 # macOS
 alias dsclean="find . -type f -name .DS_Store -print0 | xargs -0 rm"
