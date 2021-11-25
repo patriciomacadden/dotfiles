@@ -7,6 +7,7 @@ autoload -Uz add-zsh-hook
 autoload -Uz compinit && compinit
 autoload -Uz vcs_info
 
+export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 
@@ -19,13 +20,24 @@ setopt inc_append_history
 
 setopt prompt_subst
 
-bindkey ";5D" backward-word
-bindkey "[D" backward-word
-bindkey ";5C" forward-word
-bindkey "[C" forward-word
+if [ `uname -s` = "Darwin" ]
+then
+  bindkey ";5D" backward-word
+  bindkey "[D" backward-word
+  bindkey ";5C" forward-word
+  bindkey "[C" forward-word
 
-bindkey "\e[A" history-search-backward
-bindkey "\e[B" history-search-forward
+  bindkey "\e[A" history-search-backward
+  bindkey "\e[B" history-search-forward
+fi
+
+if [ `uname -s` = "Linux" ]
+then
+  bindkey "^[[1;5D" backward-word
+  bindkey "^[[1;5C" forward-word
+  bindkey "^[[A" history-search-backward
+  bindkey "^[[B" history-search-forward
+fi
 
 zstyle ":completion:*" menu select
 zstyle ":completion:*" special-dirs true
