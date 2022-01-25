@@ -20,6 +20,8 @@ setopt inc_append_history
 
 setopt prompt_subst
 
+bindkey -e
+
 if [ `uname -s` = "Darwin" ]
 then
   bindkey ";5D" backward-word
