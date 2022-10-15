@@ -51,6 +51,6 @@ zstyle ":vcs_info:git*" formats " on %b"
 add-zsh-hook precmd vcs_info
 
 # PS1="%~\$vcs_info_msg_0_ %F{50}❯%F{reset} "
-PS1="%~\$vcs_info_msg_0_ %F{50}λ%F{reset} "
+PS1="%~\$vcs_info_msg_0_ %B%F{50}λ%f%b "
 
 [ -f ~/.aliases ] && source ~/.aliases

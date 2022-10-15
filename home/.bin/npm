@@ -1,3 +1,8 @@
 #!/bin/bash
 
-docker-compose run --rm web npm "$@"
+if [ -f docker-compose.yml ]
+then
+  docker-compose run --rm web npm "$@"
+else
+  /usr/bin/npm "$@"
+fi
