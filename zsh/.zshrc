@@ -1,5 +1,5 @@
-[ `uname -s` = "Darwin" ] && source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-[ `uname -s` = "Linux" ] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ `uname -s` = "Darwin" ] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ `uname -s` = "Linux" ] && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 

@@ -1,3 +1,8 @@
 #!/bin/bash
 
-docker-compose run --rm web yarn "$@"
+if [ -f docker-compose.yml ]
+then
+  docker-compose run --rm $(guess-node-service) yarn "$@"
+else
+  /usr/bin/yarn "$@"
+fi
