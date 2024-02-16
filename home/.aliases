@@ -36,7 +36,7 @@ alias vim="nvim -p"
 alias vi="nvim -p"
 
 # server
-alias serve="python -m http.server 8000 $@"
+alias serve="python3 -m http.server 8000 $@"
 
 # ssh
 if [ `uname -s` = "Darwin" ]

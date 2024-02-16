@@ -2,8 +2,6 @@ call plug#begin()
 
 Plug 'airblade/vim-helptab'
 Plug 'ap/vim-css-color'
-Plug 'arcticicestudio/nord-vim'
-Plug 'chriskempson/base16-vim'
 Plug 'dkprice/vim-easygrep'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -46,9 +44,7 @@ set background=dark
 if has("termguicolors")
   set termguicolors
 endif
-" colorscheme base16-material
-" colorscheme base16-onedark
-colorscheme nord
+colorscheme railscasts
 
 " 6 multiple windows
 set splitbelow

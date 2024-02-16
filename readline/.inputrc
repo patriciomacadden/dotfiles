@@ -1,7 +1,0 @@
-";5D": backward-word
-"[D": backward-word
-";5C": forward-word
-"[C": forward-word
-
-"\e[A": history-search-backward
-"\e[B": history-search-forward
