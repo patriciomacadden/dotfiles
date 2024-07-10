@@ -2,7 +2,7 @@
 
 if [ -f docker-compose.yml ]
 then
-  docker-compose run --rm $(guess-node-service) npx "$@"
+  docker compose run --rm $(guess-node-service) npx "$@"
 else
   /usr/bin/npx "$@"
 fi

@@ -2,7 +2,7 @@
 
 if [ -f docker-compose.yml ]
 then
-  docker-compose run --rm $(guess-node-service) yarn "$@"
+  docker compose run --rm $(guess-node-service) yarn "$@"
 else
   /usr/bin/yarn "$@"
 fi
