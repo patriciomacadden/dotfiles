@@ -2,7 +2,6 @@ alias reload="exec $SHELL -l"
 
 # docker
 alias dc="docker compose"
-alias dfix="sudo chown $USER:$USER -R ."
 alias dsp="docker system prune -f"
 
 # grep
@@ -13,9 +12,6 @@ if [ `uname -s` = "Linux" ]
 then
   alias ls="ls --color"
 fi
-
-# localtunnel
-alias lt="npx localtunnel"
 
 # macOS
 if [ `uname -s` = "Darwin" ]

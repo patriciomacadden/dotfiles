@@ -2,6 +2,13 @@
 
 $(grep web docker-compose.yml > /dev/null)
 
-[[ "$?" = 0 ]] && service=web || service=api
+if [[ "$?" = 0 ]]
+then
+  service=web
+else
+  $(grep rails-app docker-compose.yml > /dev/null)
+
+  [[ "$?" = 0 ]] && service=rails-app || service=api
+fi
 
 echo $service

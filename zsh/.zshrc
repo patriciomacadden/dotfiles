@@ -24,11 +24,6 @@ bindkey -e
 
 if [ `uname -s` = "Darwin" ]
 then
-  bindkey ";5D" backward-word
-  bindkey "[D" backward-word
-  bindkey ";5C" forward-word
-  bindkey "[C" forward-word
-
   bindkey "\e[A" history-search-backward
   bindkey "\e[B" history-search-forward
 fi

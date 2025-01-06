@@ -1,7 +1,0 @@
-#!/bin/bash
-
-$(grep web docker-compose.yml > /dev/null)
-
-[[ "$?" = 0 ]] && service=web || service=fe
-
-echo $service

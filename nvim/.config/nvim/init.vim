@@ -45,7 +45,7 @@ set background=dark
 if has("termguicolors")
   set termguicolors
 endif
-colorscheme railscasts
+colorscheme sinaptia
 
 " 6 multiple windows
 set splitbelow
